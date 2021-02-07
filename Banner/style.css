@@ -1,0 +1,158 @@
+/* === Small CSS Reset === */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cone img {
+    width: 300px;
+}
+
+.cone {
+    position: relative;
+    width: 300px;
+}
+
+#cone {
+    position: absolute;
+    bottom: 0;
+}
+
+#cone-cutout {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+
+#matcha-cone-cutout {
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+    opacity: 0;
+}
+
+.scoop img {
+    width: 170px;
+}
+
+#chocolate {
+    transform: translate(300px);
+    position: relative;
+    z-index: 1;
+}
+
+#caramel {
+    transform: translate(-300px);
+    position: relative;
+    z-index: 2;
+}
+
+#sakura {
+    transform: translate(80px);
+    position: relative;
+    z-index: 3;
+    width: 200px;
+}
+
+#matcha {
+    transform: translate(-70px);
+    position: relative;
+    z-index: 4;
+    width: 220px;
+}
+
+.slogan {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.slogan span {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 10rem;
+}
+
+.slogan span#sakura-color {
+    color: #E88CA9;
+}
+
+.slogan span.matcha-color {
+    color: #768C46;
+}
+
+#slogan1, #slogan2, #slogan3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 430px);
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    visibility: hidden;
+}
+
+#slogan3 {
+    transform: translate(-50%, 200px);
+    padding: 0;
+}
+
+#slogan3 .matcha-color {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-left: 0.2rem;
+}
+
+#newflavours {
+    visibility: hidden;
+}
+
+.moevenpick_logo {
+    position: relative;
+}
+
+#o-logo, #without-o-logo {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.cta-button a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    background: white;
+    border: solid 2px black;
+    padding: 1rem 2rem;
+    transform: translate(-50%, -430px);
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.cta-button a:hover {
+    background: #ff4647;
+    color: white;
+    border: solid 2px #ff4647;
+    transition: .5s;
+}

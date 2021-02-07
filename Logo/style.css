@@ -1,0 +1,33 @@
+/* === Small CSS Reset === */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.moevenpick_logo {
+    position: relative;
+}
+
+#o-logo, #o-logo-without-bird, #bird, #without-o-logo {
+    position: absolute;
+    left: 50%;
+    top: 240px;
+    transform: translateX(-50%);
+}
+
+#o-logo-without-bird, #bird {
+    opacity: 0;
+}
+
+#bird {
+    z-index: -1;
+}
